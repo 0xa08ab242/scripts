@@ -15,7 +15,6 @@
 # The remaining value should be the correct one.
 ##
 # SAMPLE OUTPUT FROM THIS PROGRAM TO DEMONSTRATE IT PRODUCE THE CORRECT REFERENCE DATA
-#G:\Administrator Documents Backup\Programming\Euler>perl euler_problem_001.pl
 #The value of sum_of_multiple for 3 is 18
 #The value of sum_of_multiple for 5 is 5
 #The value of sum_of_multiple for 15 is 0
@@ -24,13 +23,11 @@
 #
 ##
 # SAMPLE OUTPUT FROM THIS PROGRAM TO DEMONSTRATE THE INTENDED OUTPUT DATA
-#G:\Administrator Documents Backup\Programming\Euler>perl euler_problem_001.pl
 #The value of sum_of_multiple for 3 is 166833
 #The value of sum_of_multiple for 5 is 99500
 #The value of sum_of_multiple for 15 is 33165
 #The final value is 233168
 #END OF LINE
-#G:\Administrator Documents Backup\Programming\Euler>
 #
 ########################################################################################
 
@@ -83,7 +80,7 @@ my $multiple_total_for_third_number = $sum_of_multiple;
 my $final_value = $multiple_total_for_first_number + $multiple_total_for_second_number - $multiple_total_for_third_number;
 print "The final value is " . $final_value . "\n";
 
-print  "END OF LINE";
+print "END OF LINE";
 exit 0;
 
 ########################################################################################
