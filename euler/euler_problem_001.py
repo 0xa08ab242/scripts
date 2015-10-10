@@ -43,7 +43,6 @@ sum_of_sums = 3
 
 # Variables declaration, initialization, etc.
 #
-new_variable = 0
 number = second_number
 number_product = first_number * second_number
 

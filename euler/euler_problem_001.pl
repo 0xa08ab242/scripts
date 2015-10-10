@@ -51,7 +51,6 @@ my $sum_of_sums = 3;
 ########################################################################################
 # Variables declaration, initialization, etc.
 ########################################################################################
-my $new_variable = undef;
 my $number = $second_number;
 my $number_product = $first_number * $second_number;
 $SIG{INT}					= \&graceful_close ;
@@ -66,12 +65,12 @@ sum_multiples_of_number($first_number);
 print "The value of sum_of_multiple for " . $first_number ." is ";
 print $sum_of_multiple . "\n";
 my $multiple_total_for_first_number = $sum_of_multiple;
-#calculate and store the value for the second number
+# calculate and store the value for the second number
 sum_multiples_of_number($second_number);
 print "The value of sum_of_multiple for " . $second_number ." is ";
 print $sum_of_multiple . "\n";
 my $multiple_total_for_second_number = $sum_of_multiple;
-#calculate and store the value for the product of the first and second numbers
+# calculate and store the value for the product of the first and second numbers
 sum_multiples_of_number($number_product);
 print "The value of sum_of_multiple for " . $number_product ." is ";
 print $sum_of_multiple . "\n";
