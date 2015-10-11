@@ -11,7 +11,6 @@ f_1:write(m_1)
 -- TODO: add search examples
 -- TODO: add search input to external files or command line
 
-
 -- global functions
 
 -- comma ',' delimited field splitter
