@@ -39,7 +39,6 @@ first_number = 3
 loop_limit = 1000
 second_number = 5
 sum_of_multiple = 0
-sum_of_sums = 3
 
 # Variables declaration, initialization, etc.
 #
@@ -61,21 +60,21 @@ def sum_multiples_of_number(number_in):
 # calculate and store the value for the first number
 sum_multiples_of_number(first_number)
 
-print "The value of sum_of_multiple for %s is %s \n." % (first_number, sum_of_multiple)
+print "The value of sum_of_multiple for %s is %s.\n" % (first_number, sum_of_multiple)
 multiple_total_for_first_number = sum_of_multiple
 #calculate and store the value for the second number
 sum_multiples_of_number(second_number)
-print "The value of sum_of_multiple for %s is %s \n." % (second_number, sum_of_multiple)
+print "The value of sum_of_multiple for %s is %s.\n" % (second_number, sum_of_multiple)
 
 multiple_total_for_second_number = sum_of_multiple
 #calculate and store the value for the product of the first and second numbers
 sum_multiples_of_number(number_product)
 
-print "The value of sum_of_multiple for %s is %s \n." % (number_product, sum_of_multiple)
+print "The value of sum_of_multiple for %s is %s.\n" % (number_product, sum_of_multiple)
 
 multiple_total_for_third_number = sum_of_multiple
 # combine the output of the three prior steps and report it to the console
 
 final_value = multiple_total_for_first_number + multiple_total_for_second_number - multiple_total_for_third_number
-print "The final value is %s \n." % (final_value)
+print "The final value is %s.\n" % (final_value)
 print "END OF LINE"
