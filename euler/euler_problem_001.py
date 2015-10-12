@@ -77,5 +77,5 @@ multiple_total_for_third_number = sum_of_multiple
 # combine the output of the three prior steps and report it to the console
 
 final_value = multiple_total_for_first_number + multiple_total_for_second_number - multiple_total_for_third_number
-print "The final value is %s \n" % (final_value)
+print "The final value is %s \n." % (final_value)
 print "END OF LINE"

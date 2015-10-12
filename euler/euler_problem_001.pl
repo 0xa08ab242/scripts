@@ -77,7 +77,7 @@ print $sum_of_multiple . "\n";
 my $multiple_total_for_third_number = $sum_of_multiple;
 # combine the output of the three prior steps and report it to the console
 my $final_value = $multiple_total_for_first_number + $multiple_total_for_second_number - $multiple_total_for_third_number;
-print "The final value is " . $final_value . "\n";
+print "The final value is " . $final_value . "\n.";
 
 print "END OF LINE";
 exit 0;
