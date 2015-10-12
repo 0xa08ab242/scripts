@@ -34,7 +34,6 @@ first_number = 3
 loop_limit = 1000
 second_number = 5
 sum_of_multiple = 0
-sum_of_sums = 3
 --
 -- Variables declaration, initialization, etc.
 --
