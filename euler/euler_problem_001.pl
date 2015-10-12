@@ -46,7 +46,6 @@ my $first_number = 3;
 my $loop_limit = 1000;
 my $second_number = 5;
 my $sum_of_multiple = 0;
-my $sum_of_sums = 3;
 
 ########################################################################################
 # Variables declaration, initialization, etc.
