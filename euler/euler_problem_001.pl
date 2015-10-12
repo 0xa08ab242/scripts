@@ -62,21 +62,21 @@ $SIG{HUP}					= \&graceful_close ;
 # calculate and store the value for the first number
 sum_multiples_of_number($first_number);
 print "The value of sum_of_multiple for " . $first_number ." is ";
-print $sum_of_multiple . "\n";
+print $sum_of_multiple . ".\n";
 my $multiple_total_for_first_number = $sum_of_multiple;
 # calculate and store the value for the second number
 sum_multiples_of_number($second_number);
 print "The value of sum_of_multiple for " . $second_number ." is ";
-print $sum_of_multiple . "\n";
+print $sum_of_multiple . ".\n";
 my $multiple_total_for_second_number = $sum_of_multiple;
 # calculate and store the value for the product of the first and second numbers
 sum_multiples_of_number($number_product);
 print "The value of sum_of_multiple for " . $number_product ." is ";
-print $sum_of_multiple . "\n";
+print $sum_of_multiple . ".\n";
 my $multiple_total_for_third_number = $sum_of_multiple;
 # combine the output of the three prior steps and report it to the console
 my $final_value = $multiple_total_for_first_number + $multiple_total_for_second_number - $multiple_total_for_third_number;
-print "The final value is " . $final_value . "\n.";
+print "The final value is " . $final_value . ".\n";
 
 print "END OF LINE";
 exit 0;
