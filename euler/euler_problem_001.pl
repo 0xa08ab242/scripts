@@ -40,17 +40,12 @@ use strict;
 use warnings;
 
 ########################################################################################
-# Constants and configuration information
+# Constants and variable initialization
 ########################################################################################
 my $first_number = 3;
 my $loop_limit = 1000;
 my $second_number = 5;
 my $sum_of_multiple = 0;
-
-########################################################################################
-# Variables declaration, initialization, etc.
-########################################################################################
-my $number = $second_number;
 my $number_product = $first_number * $second_number;
 $SIG{INT}					= \&graceful_close ;
 $SIG{QUIT}					= \&graceful_close ;

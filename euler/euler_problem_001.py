@@ -2,7 +2,7 @@
 #
 # README - General comments and instructions
 #
-# This template assumes the use of Python 2
+# This template assumes the use of Python 2 on Windows
 # Project Euler Problem Solving Programs
 # Problem 001
 #	If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
@@ -33,16 +33,12 @@
 # Python Module Dependencies (--max-depth = 1) | (alphabetized)
 # none needed
 
-# Constants and configuration information
+# Constants and variable initialization
 #
 first_number = 3
 loop_limit = 1000
 second_number = 5
 sum_of_multiple = 0
-
-# Variables declaration, initialization, etc.
-#
-number = second_number
 number_product = first_number * second_number
 
 # Runtime Execution Logic
