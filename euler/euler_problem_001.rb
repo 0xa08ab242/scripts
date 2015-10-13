@@ -2,7 +2,7 @@
 #
 # README - General comments and instructions
 #
-# This template assumes the use of Ruby 2
+# This template assumes the use of Ruby 2 on Windows
 # Project Euler Problem Solving Programs
 # Problem 001
 #	If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
@@ -21,7 +21,6 @@
 #The final value is 23
 #END OF LINE
 #
-#
 # SAMPLE OUTPUT FROM THIS PROGRAM TO DEMONSTRATE THE INTENDED OUTPUT DATA
 #The value of sum_of_multiple for 3 is 166833
 #The value of sum_of_multiple for 5 is 99500
@@ -33,15 +32,11 @@
 # Ruby Module Dependencies (--max-depth = 1) | (alphabetized)
 # none needed
 
-# Constants and configuration information
+# Constants and variable initialization
 #
 first_number = 3
 second_number = 5
 loop_limit = 1000
-
-# Variables declaration, initialization, etc.
-#
-number = second_number
 number_product = first_number * second_number
 
 # Runtime Execution Logic
