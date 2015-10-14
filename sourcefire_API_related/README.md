@@ -1,0 +1,2 @@
+the scripts in this folder are dependent upon other elements that would be provided by the vendor
+refer to Sourcefire's (now Cisco's) API documentation for configuring the connection and Jason Brevnik's perl modules for processing the records
