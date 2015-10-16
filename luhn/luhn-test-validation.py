@@ -13,7 +13,11 @@ import sys
 def luhn_test(line):
 	line_out = line.rstrip()
 	reverse = [int(character) for character in str(line_out)][::-1]
-	return (sum(reverse[0::2]) + sum(sum(divmod(digit*2,10)) for digit in reverse[1::2])) % 10 == 0
+	if (sum(reverse[0::2]) + sum(sum(divmod(digit*2,10)) for digit in reverse[1::2])) % 10 == 0:
+		test_result = "is a possible valid Credit Card Number."
+	else:
+		test_result = "is not a valid Credit Card Number."
+	return test_result
 #
 # Main loop
 #
@@ -24,7 +28,7 @@ with open('CreditCard-input.txt') as fileHandleIn:
 # call the function and direct its output
 		fileHandleOut = open('CreditCard_validation_results.txt', 'a')
 		sys.stdout = fileHandleOut
-		print luhn_test(line), int(line.rstrip())
+		print int(line.rstrip()), luhn_test(line)
 		sys.stdout = sys.__stdout__
 		fileHandleOut.close()
 # EOF
