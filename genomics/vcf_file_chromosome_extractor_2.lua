@@ -58,7 +58,6 @@ f_X = io.open(outputfilenameX, "a")
 f_Y = io.open(outputfilenameY, "a")
 f_Z = io.open(outputfilenameZ, "a")
 -- global variables
--- search chromosomes and exclude comments
 -- comma ',' delimited field splitter
     function fromCSV1 (source1)
 		-- ending tab
@@ -100,15 +99,15 @@ for line in io.lines(inputfilename)
 	table1 = fromCSV1(line)
 
 -- populate variables from table
-	local CHROM = 		table1[1]
+	local CHROM = 	table1[1]
 		if CHROM == nil then
 		CHROM = " "
 		end
-	local POS = 		table1[2]
+	local POS = 	table1[2]
 		if POS == nil then
 		POS = " "
 		end
-	local ID = 	table1[3]
+	local ID = 		table1[3]
 		if ID == nil then
 		ID = " "
 		end
@@ -124,15 +123,15 @@ for line in io.lines(inputfilename)
 		if QUAL == nil then
 		QUAL = " "
 		end
-	local FILTER =		table1[7]
+	local FILTER =	table1[7]
 		if FILTER == nil then
 		FILTER = " "
 		end
-	local INFO = 			table1[8]
+	local INFO = 	table1[8]
 		if INFO == nil then
 		INFO = " "
 		end
-	local FORMAT =			table1[9]
+	local FORMAT =	table1[9]
 		if FORMAT == nil then
 		FORMAT = " "
 		end
@@ -142,31 +141,31 @@ for line in io.lines(inputfilename)
 		end
 -- set local variables
 local testcomment = (string.find(CHROM, "#"))
-local testchr1 = (string.find(CHROM, "chr1"))
-local testchr2 = (string.find(CHROM, "chr2"))
-local testchr3 = (string.find(CHROM, "chr3"))
-local testchr4 = (string.find(CHROM, "chr4"))
-local testchr5 = (string.find(CHROM, "chr5"))
-local testchr6 = (string.find(CHROM, "chr6"))
-local testchr7 = (string.find(CHROM, "chr7"))
-local testchr8 = (string.find(CHROM, "chr8"))
-local testchr9 = (string.find(CHROM, "chr9"))
-local testchr10 = (string.find(CHROM, "chr10"))
-local testchr11 = (string.find(CHROM, "chr11"))
-local testchr12 = (string.find(CHROM, "chr12"))
-local testchr13 = (string.find(CHROM, "chr13"))
-local testchr14 = (string.find(CHROM, "chr14"))
-local testchr15 = (string.find(CHROM, "chr15"))
-local testchr16 = (string.find(CHROM, "chr16"))
-local testchr17 = (string.find(CHROM, "chr17"))
-local testchr18 = (string.find(CHROM, "chr18"))
-local testchr19 = (string.find(CHROM, "chr19"))
-local testchr20 = (string.find(CHROM, "chr20"))
-local testchr21 = (string.find(CHROM, "chr21"))
-local testchr22 = (string.find(CHROM, "chr22"))
-local testchrM = (string.find(CHROM, "chrM"))
-local testchrX = (string.find(CHROM, "chrX"))
-local testchrY = (string.find(CHROM, "chrY"))
+local testchr1 = (string.gmatch(CHROM, "chr1"))
+local testchr2 = (string.gmatch(CHROM, "chr2"))
+local testchr3 = (string.gmatch(CHROM, "chr3"))
+local testchr4 = (string.gmatch(CHROM, "chr4"))
+local testchr5 = (string.gmatch(CHROM, "chr5"))
+local testchr6 = (string.gmatch(CHROM, "chr6"))
+local testchr7 = (string.gmatch(CHROM, "chr7"))
+local testchr8 = (string.gmatch(CHROM, "chr8"))
+local testchr9 = (string.gmatch(CHROM, "chr9"))
+local testchr10 = (string.gmatch(CHROM, "chr10"))
+local testchr11 = (string.gmatch(CHROM, "chr11"))
+local testchr12 = (string.gmatch(CHROM, "chr12"))
+local testchr13 = (string.gmatch(CHROM, "chr13"))
+local testchr14 = (string.gmatch(CHROM, "chr14"))
+local testchr15 = (string.gmatch(CHROM, "chr15"))
+local testchr16 = (string.gmatch(CHROM, "chr16"))
+local testchr17 = (string.gmatch(CHROM, "chr17"))
+local testchr18 = (string.gmatch(CHROM, "chr18"))
+local testchr19 = (string.gmatch(CHROM, "chr19"))
+local testchr20 = (string.gmatch(CHROM, "chr20"))
+local testchr21 = (string.gmatch(CHROM, "chr21"))
+local testchr22 = (string.gmatch(CHROM, "chr22"))
+local testchrM = (string.gmatch(CHROM, "chrM"))
+local testchrX = (string.gmatch(CHROM, "chrX"))
+local testchrY = (string.gmatch(CHROM, "chrY"))
 -- prepend all files with commented lines
 if testcomment ~= nil then
 	print("found: "..line.."\n")
