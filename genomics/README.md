@@ -1,11 +1,9 @@
-Here are a few scripts that I initially wrote to extract specific chromosomes from much larger files using the VCF or gVCF format.
+Here are a few scripts that I wrote to help with some genetic genealogy research.
 
-In their present version, they create one file per chromosome from the large VCF files
-the header portion is copied to all files.
+These are for extracting data from a VCF file:
+vcf_file_chromosome_extractor_1
+vcf_file_chromosome_extractor_2
 
-Except for the file from DNA Land, the other input files I have tested were created from the raw BAM files, instead of the prefiltered files provided by the respective vendors.
+The remaining lua scripts are part of a workflow I used to augument my test results with those from my parents, to increase the covered alleles, and then convert the results back into 23andme format, for input into other analysis tools.
 
-pending TODO list:
-	consolidate the two Lua scripts into 1 that tests for both conditions
-	convert the Lua script into other languages: (Perl, Python, etc.) - practice logic equivalence
-	convert the script into other languages: (ASM, C/C++, Go, etc.) - practice speed optimization
+The SQL entry was for uploading the resulting csv into a local postgres database.
